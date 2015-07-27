@@ -9,8 +9,7 @@
 //[1, 2]. forEach(alert);
 
     // 'var' its is variable. so i just set var name; then save in vat string
-var say = 'Hello', name = 'Click', age = '32 y.o.'; // i can use meny variables in var like in this exercise
-    alert (say);
-    alert (name);
-    alert (age);
-
+var name = "Click";
+var admin;
+    admin = name;
+alert (admin);
