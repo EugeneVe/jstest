@@ -3,13 +3,12 @@
  */
 
 //this command will show alert window with test "No error"
-//"use strict";
 //alert("No error");
 //this command will show two other windows what will shows from firs to last step by step
 //[1, 2]. forEach(alert);
 
     // 'var' its is variable. so i just set var name; then save in vat string
-var name = "Click";
-var admin;
-    admin = name;
-alert (admin);
+"use strict";
+var planet = "Earth", username = "Click";
+alert (planet);
+alert (username);
