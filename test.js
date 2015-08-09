@@ -9,6 +9,6 @@
 
     // 'var' its is variable. so i just set var name; then save in vat string
 "use strict";
-var planet = "Earth", username = "Click";
+var planet = "Mars", username = "Click";
 alert (planet);
 alert (username);

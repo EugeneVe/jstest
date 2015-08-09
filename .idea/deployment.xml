@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="On explicit save action" serverName="clickjstest" filePermissions="511" folderPermissions="511">
+  <component name="PublishConfigData" autoUpload="On explicit save action" serverName="clickjs" filePermissions="511" folderPermissions="511">
+    <serverData>
+      <paths name="clickjs">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath path="/.quarantine" />
+            <excludedPath path="/.tmb" />
+            <excludedPath path="/_file-manager" />
+            <excludedPath path="/bin" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
     <option name="myAutoUpload" value="ON_EXPLICIT_SAVE" />
   </component>
 </project>
