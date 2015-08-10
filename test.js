@@ -12,18 +12,22 @@
 //var planet = "Earth", username = "Click";
 //alert (planet);
 //alert (username);
+
+//var count = 2+3;
+//    alert (count);
+
+//var a = 1, b = 1, c, d;
+//
+//c = ++a; alert(c); // 2
+//d = b++; alert(d); // 1
+//
+//c = (2+ ++a); alert(c); // 5
+//d = (2+ b++); alert(d); // 4
+//
+//alert(a); // 3
+//alert(b); // 3
+
 "use strict";
-var count = 2+3;
-    alert (count);
-
-var x=1;
-x = -x;
+var a = 2;
+var x = 1 + (a *= 2);
 alert(x);
-
-var apples = 2;
-var pinapples = 8;
-alert(+apples * +pinapples);
-
-var digit=5;
-digit --;
-alert(digit);
