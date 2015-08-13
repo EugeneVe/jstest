@@ -26,8 +26,11 @@
 //
 //alert(a); // 3
 //alert(b); // 3
+clickit = function() {
+    "use strict";
+    var a = 2;
+    var x = 1 + (a *= 2);
+    alert(x);
 
-"use strict";
-var a = 2;
-var x = 1 + (a *= 2);
-alert(x);
+    alert('Банан' > 'Аян');
+}
