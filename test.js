@@ -26,10 +26,10 @@
 //
 //alert(a); // 3
 //alert(b); // 3
-clickit = function() {
+function clickit () {
     "use strict";
-    var a = 2;
-    var x = 1 + (a *= 2);
+    var a = 3;
+    var x = 12 / ( a *= 2);
     alert(x);
 
     alert('Банан' > 'Аян');

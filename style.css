@@ -70,7 +70,7 @@ a:active{
 #header {
 	display:inline;
 	height:90px;
-	overflow: auto;
+	overflow: hidden;
 	width: 100%;
 	margin: auto;
 	background-color: rgba(255, 234, 0, 1.0);
@@ -78,8 +78,9 @@ a:active{
 }
 #left_menu {
 	margin-top: 90px;
-	background-color: rgba(255, 234, 0, 0.7);
+	background-color: #6ab3a8;
 	width: 20%;
+	height: 5%;
 	text-align: left;
 	margin-left: 0%;
 	margin-right: 80%;
@@ -90,7 +91,7 @@ a:active{
 	background-color: rgba(255, 234, 0, 0.7);
 	width: 20%;
 	text-align: left;
-	margin-left: 80%;
+	margin-left: 50%;
 	position: fixed;
 }
 #content{
@@ -126,5 +127,11 @@ span.footertext {
 	color:floralwhite;
 	text-shadow: 1px 1px 2px dimgray;
 }
-
+.button {
+	background:url(http://evenon.zz.mu/images/play-button.png) no-repeat;
+	cursor:pointer;
+	width: 33px;
+	height: 33px;
+	border: none;
+}
 
