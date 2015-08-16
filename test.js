@@ -26,11 +26,20 @@
 //
 //alert(a); // 3
 //alert(b); // 3
-function clickit () {
-    "use strict";
-    var a = 3;
-    var x = 12 / ( a *= 2);
-    alert(x);
-
-    alert('Банан' > 'Аян');
+"use strict";
+function pushit () {
+    var username = prompt('What is your name ', '');
+    if ( username != 'Click' ) alert ('It is wrong');
+    if ( username == 'Click') alert('This is it');
+    // // from my lesson #comparison
+    //var a = 'Apolon', b = 'Ground';
+    //alert( a < b );
+}
+function pushit1 () {
+    var isAdmin = confirm ("Are u Administrator?");
+    alert(isAdmin);
+    // from my lesson #comparison
+    //var a = +'82', b = +'24';
+    //have to use  plus + to see digit
+    //alert( a < b );
 }
