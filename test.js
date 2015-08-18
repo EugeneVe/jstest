@@ -29,8 +29,10 @@
 "use strict";
 function pushit () {
     var username = prompt('What is your name ', '');
-    if ( username != 'Click' ) alert ('It is wrong');
-    if ( username == 'Click') alert('This is it');
+    if ( username == 'Click' ) alert ('This is it');
+    else {
+        alert('Wrong');
+    }
     // // from my lesson #comparison
     //var a = 'Apolon', b = 'Ground';
     //alert( a < b );
