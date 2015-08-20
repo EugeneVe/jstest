@@ -441,6 +441,7 @@ fieldset[disabled] .btn-success.active {
 	border-color: #46b8da;
     -webkit-box-shadow: 5px 5px 5px #486781;
     box-shadow: 5px 5px 5px #486781;
+	margin-top: 6px;
 }
 .btn-info:focus,
 .btn-info.focus {
@@ -822,7 +823,7 @@ a:active{
 #left_menu {
 	margin-top: 90px;
 	background-color: #999999;
-	width: 20%;
+	width: 15%;
 	height: 100%;
 	text-align: left;
 	margin-left: 0%;
@@ -839,10 +840,11 @@ a:active{
  }
 #right_menu {
 	margin-top: 90px;
-	background-color: rgba(255, 234, 0, 0.7);
-	width: 20%;
+	background-color: #999999;
+	width: 15%;
+	height: 100%;
 	text-align: left;
-	margin-left: 50%;
+	margin-left: 85%;
 	position: fixed;
 }
 #content{
@@ -855,7 +857,7 @@ a:active{
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-	width: 60%;
+	width: 70%;
 	height: 1080px;
 	background-color: rgba(189, 255, 242, 0.0);
 }

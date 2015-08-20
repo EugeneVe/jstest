@@ -15,6 +15,16 @@
           </excludedPaths>
         </serverdata>
       </paths>
+      <paths name="clickjstest">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath path="/DO_NOT_UPLOAD_HERE" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
     </serverData>
     <option name="myAutoUpload" value="ON_EXPLICIT_SAVE" />
   </component>
