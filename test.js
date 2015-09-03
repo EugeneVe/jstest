@@ -79,6 +79,24 @@ function pushit3 () {
         alert('false');
     }
 }
+
+function pushit4 () {
+
+    dig:  for (var i = 0; i < 100; i++)
+        {
+            var input = prompt('Type digit > then 100 '+input+'','');
+            if (!input) break dig;
+            else if (input > 100) break dig;
+        }
+
+    alert('Done');
+}
+//var i=0;
+//    for ( i=2; i<=10; i++){
+//        if ( i%2==1) continue;
+//        alert( i );
+//    }
+
 //(age <= 13 || age >= 91) alert('false');
 //var username = prompt('What is your name ', '');
 //if ( username == 'Click' ) alert ('This is it');
