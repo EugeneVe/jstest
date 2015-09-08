@@ -1,5 +1,5 @@
-/**
- * Created by click on 25.07.15.
- */
+
 "use strict";
-alert("IT IS REALLY HUGE FILE, OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO");
+function pushit3 () {
+    window.location = "http://urlgalleries.net/?p=7&t=&q=&";
+}

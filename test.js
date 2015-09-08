@@ -82,15 +82,29 @@ function pushit3 () {
 
 function pushit4 () {
 
-    dig:  for (var i = 0; i < 100; i++)
-        {
-            var input = prompt('Type digit > then 100 '+input+'','');
-            if (!input) break dig;
-            else if (input > 100) break dig;
-        }
-
-    alert('Done');
+    for (var i=2; i<=10; i++){
+        if (i==2);
+        else if (i%2==0) continue;
+        else if (i>7) break;
+        alert( i );
+    }
 }
+
+function pushit5 () {
+    
+}
+
+
+//dig:  for (var i = 0; i < 100; i++)
+//    {
+//        var input = prompt('Type digit > then 100 '+input+'','');
+//        if (!input) break dig;
+//        else if (input > 100) break dig;
+//    }
+//
+//alert('Done');
+
+
 //var i=0;
 //    for ( i=2; i<=10; i++){
 //        if ( i%2==1) continue;
