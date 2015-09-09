@@ -90,8 +90,18 @@ function pushit4 () {
     }
 }
 
+
+
+
 function pushit5 () {
-    
+
+    document.onkeydown = function(evt) {
+        evt = evt || window.event;
+        if (evt.keyCode == 27) {
+            window.open("http://urlgalleries.net");
+        }
+    };
+
 }
 
 
