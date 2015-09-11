@@ -90,19 +90,23 @@ function pushit4 () {
     }
 }
 
-
-
-
 function pushit5 () {
 
-    document.onkeydown = function(evt) {
-        evt = evt || window.event;
-        if (evt.keyCode == 27) {
-            window.open("http://urlgalleries.net");
-        }
-    };
+    var browser = prompt('type here name of browser', '');
+        if (browser == 'IE') alert( 'О, да у вас IE!' );
+            else if (browser == 'Chrome' || browser == 'Firefox' || browser == 'Safari' || browser == 'Opera')
+            alert ('Да, и эти браузеры мы поддерживаем');
+
+         else alert('Мы надеемся, что и в вашем браузере все ок!' );
 
 }
+
+//document.onkeydown = function(evt) {
+//    evt = evt || window.event;
+//    if (evt.keyCode == 27) {
+//        window.open("http://urlgalleries.net");
+//    }
+//};
 
 
 //dig:  for (var i = 0; i < 100; i++)
