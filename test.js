@@ -92,6 +92,13 @@ function pushit4 () {
 
 function pushit5 () {
 
+    document.onkeydown = function(evt) {
+        evt = evt || window.event;
+        if (evt.keyCode == 37) {
+            window.open("http://urlgalleries.net");
+        }
+    };
+
     var a = +prompt('a?', '');
     switch (a){
         case 0:
@@ -107,6 +114,23 @@ function pushit5 () {
         default: alert("Nop, i dont know this digit");
     }
 }
+
+function pushit6 () {
+
+    function kidage(age) {
+        if (age > 18) {
+            return true;
+        }else{
+            return confirm('Родители разрешили?');}
+        }
+
+        var age = prompt('Enter your age', '');
+            if (kidage(age)) {
+                alert('Доступ разрешен');
+                window.open("http://vk.com");
+            }else{ alert('Get out');}
+}
+
 
 //document.onkeydown = function(evt) {
 //    evt = evt || window.event;

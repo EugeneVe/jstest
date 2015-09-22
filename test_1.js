@@ -1,5 +1,8 @@
 
 "use strict";
-function pushit3 () {
-    window.location = "http://urlgalleries.net/?p=7&t=&q=&";
-}
+document.onkeydown = function(evt) {
+    evt = evt || window.event;
+    if (evt.keyCode == 37) {
+        window.open("http://urlgalleries.net");
+    }
+};
