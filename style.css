@@ -829,12 +829,12 @@ a:active{
 	margin-left: 0%;
 	margin-right: 80%;
 	position: fixed;
-}#buttonpushit {
+}#btpushleft {
 	 margin-top: 05px;
 	 text-align: center;
  }
 
-#buttonpushit1 {
+#btpushright {
 	 margin-top: 05px;
 	 text-align: center;
  }
@@ -848,7 +848,7 @@ a:active{
 	position: fixed;
 }
 #content{
-    background-image: url(http://picsfab.com/download/image/166233/1920x1080_devushka-radost-pryizhok-vozdushnyie-sharyi.jpg);
+    background-image: url(http://picsfab.com/download/image/22438/1920x1200_ubuntu-floor.jpg);
     background-size: cover;
     background-position: left bottom;
     background-repeat: repeat-x;

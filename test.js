@@ -95,7 +95,7 @@ function pushit5 () {
     document.onkeydown = function(evt) {
         evt = evt || window.event;
         if (evt.keyCode == 37) {
-            window.open("http://urlgalleries.net");
+            window.open("http://vk.com");
         }
     };
 
@@ -188,3 +188,13 @@ function pushit6 () {
 //var a = +'82', b = +'24';
 //have to use  plus + to see digit
 //alert( a < b );
+
+function pushit7 () {
+    var testalert = prompt('Please type any digits');
+    if (testalert == null) alert('see you');
+    else if (testalert == '0' || testalert == '00' || testalert == '000') alert('this is a digit');
+    else if (testalert == '0000') alert('STOP DO THIS SHIT, type other digits');
+    else if (testalert == '') alert('here is empty, try one more time');
+    else if (testalert >0 || testalert <0) alert('this is a digit');
+    else alert('this is not a digit');
+}
