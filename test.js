@@ -1,7 +1,6 @@
 /**
  * Created by click on 25.07.15.
  */
-
 //this command will show alert window with test "No error"
 //alert("No error");
 //this command will show two other windows what will shows from firs to last step by step
@@ -23,7 +22,7 @@ function pushit () {
     else if (login == 'Click') {
 
         var password = prompt ('Enter your password', ''); {
-            if (password == 0) {
+            if (password == null) {
                 alert('Goodbye');
             }
             else if (password != '1111') {
@@ -191,10 +190,17 @@ function pushit6 () {
 
 function pushit7 () {
     var testalert = prompt('Please type any digits');
-    if (testalert == null) alert('see you');
-    else if (testalert == '0' || testalert == '00' || testalert == '000') alert('this is a digit');
-    else if (testalert == '0000') alert('STOP DO THIS SHIT, type other digits');
-    else if (testalert == '') alert('here is empty, try one more time');
-    else if (testalert >0 || testalert <0) alert('this is a digit');
-    else alert('this is not a digit');
+        if (testalert == null) alert('see you');
+            else if (testalert == '0' || testalert == '00' || testalert == '000') alert('this is a digit');
+            else if (testalert == '0000') alert('STOP DO THIS SHIT, type other digits');
+            else if (testalert == '') alert('here is empty, try one more time');
+            else if (testalert >0 || testalert <0) alert('this is a digit');
+        else alert('this is not a digit');
 }
+
+function pushit8 () {
+/*    prompt('type 50+20');
+        var i = (), u = ();
+            if (i+u) alert(i+u);
+    else alert("NO");*/
+    }

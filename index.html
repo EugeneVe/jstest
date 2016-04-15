@@ -4,49 +4,47 @@
     <meta charset="UTF-8">
     <title>JavaScript test site!!!</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="style2.css" rel="stylesheet" type="text/css" />
     <!--script with path of js-->
+    <script async src="https://code.jquery.com/jquery-2.2.3.js"></script>
+    <!--<script async src="/js/background.js"></script>-->
     <script async src="test.js"></script>
 </head>
 <body>
-
-<div id="wrapper">
-    <div id="container">
-
-        <div id="header">
-            <h2>JavaScript test site!!!</h2>
-        </div>
-
-        <div id="left_menu">
-            <div id="btpushleft">
+<div id="wrap">
+    <div id="header">
+        <br><h2>JavaScript test site!!!</h2>
+    </div>
+        <!--<div id="navigation"></div>-->
+            <div id="left_menu">
                 <INPUT type="button" class="btn btn-info" value="Push it 1" onclick="pushit1()"><br>
                 <INPUT type="button" class="btn btn-info" value="Push it 2" onclick="pushit2()"><br>
                 <INPUT type="button" class="btn btn-info" value="Push it 3" onclick="pushit3()"><br>
                 <INPUT type="button" class="btn btn-info" value="Push it 4" onclick="pushit4()"><br>
                 <INPUT type="button" class="btn btn-info" value="Push it 5" onclick="pushit5()"><br>
                 <INPUT type="button" class="btn btn-info" value="Push it 6" onclick="pushit6()"><br>
-                <INPUT type="button" class="btn btn-info" value="Test button" onclick="pushit7()">
+                <INPUT type="button" class="btn btn-info" value="Test button" onclick="pushit7()"><br>
+                <INPUT type="button" class="btn btn-info" value="Empty" onclick="pushit8()">
             </div>
-        </div>
-
-        <div id="right_menu">
-            <div id="btpushright">
-                <INPUT type="button" class="btn btn-info" value="Sign in" onclick="pushit()">
-            </div>
-        </div>
-
-        <div id="footer">
-            <!--here is can be some code for a footer-->
-        </div>
-        <div id="content">
-            <div id="aa"><a href="index-1.html">::1::</a>
-            </div>
-                <div id="bb"><a href="index-2.html">::2::</a>
+                <div id="right_menu">
+                    <div id="btpushright">
+                        <INPUT type="button" class="btn btn-info" value="Sign in" onclick="pushit()">
+                    </div>
                 </div>
-                    <div id="cc"><a href="index-3.html">::3::</a>
-                    </div></br>
-            <p id="test"></p>
-        </div>
-    </div>
+                <div id="content">
+                    <div class="calculator">
+                        <INPUT type="button" class="btn btn-info" value="1" onclick="btn1()"><br><br>
+                    </div>
+                    <div id="links">
+                        <a href="index-1.html">::1::</a><br>
+                        <a href="index-2.html">::2::</a><br>
+                        <a href="index-3.html">::3::</a>
+                    </div>
+                    <p id="test"></p>
+                </div>
+                    <!--<div id="clear"></div>-->
+                        <div id="footer" class="middle"><p>© Click, 2016</p></div>
 </div>
+
 </body>
 </html>
