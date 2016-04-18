@@ -1,6 +1,29 @@
 /**
  * Created by click on 25.07.15.
  */
+
+/*______________________________________________SCROLLUP FOR PAGE START______________________________________________*/
+
+jQuery( document ).ready(function() {
+    jQuery('#scrollup img').mouseover( function(){
+        jQuery( this ).animate({opacity: 0.65},100);
+    }).mouseout( function(){
+        jQuery( this ).animate({opacity: 1},100);
+    }).click( function(){
+        window.scroll(0 ,0);
+        return false;
+    });
+
+    jQuery(window).scroll(function(){
+        if ( jQuery(document).scrollTop() > 0 ) {
+            jQuery('#scrollup').fadeIn('fast');
+        } else {
+            jQuery('#scrollup').fadeOut('fast');
+        }
+    });
+});
+/*_________________________________________SCROLLUP FOR PAGE END___________________________________________________*/
+
 //this command will show alert window with test "No error"
 //alert("No error");
 //this command will show two other windows what will shows from firs to last step by step
@@ -204,3 +227,7 @@ function pushit8 () {
             if (i+u) alert(i+u);
     else alert("NO");*/
     }
+
+function btn1 () {
+
+}

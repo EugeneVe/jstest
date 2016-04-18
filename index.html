@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>JavaScript test site!!!</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
     <link href="style2.css" rel="stylesheet" type="text/css" />
     <!--script with path of js-->
     <script async src="https://code.jquery.com/jquery-2.2.3.js"></script>
-    <!--<script async src="/js/background.js"></script>-->
     <script async src="test.js"></script>
+    <!--<script async src="/js/background.js"></script>-->
 </head>
 <body>
 <div id="wrap">
-    <div id="header">
-        <br><h2>JavaScript test site!!!</h2>
+    <div id="header" class="middle">
+        <div class="logo"><img src="/images/logo.png"></div>
+        <h2>JS тестилка</h2>
     </div>
-        <!--<div id="navigation"></div>-->
+    <!--<div id="line"></div>-->
             <div id="left_menu">
                 <INPUT type="button" class="btn btn-info" value="Push it 1" onclick="pushit1()"><br>
                 <INPUT type="button" class="btn btn-info" value="Push it 2" onclick="pushit2()"><br>
@@ -32,19 +32,28 @@
                     </div>
                 </div>
                 <div id="content">
-                    <div class="calculator">
-                        <INPUT type="button" class="btn btn-info" value="1" onclick="btn1()"><br><br>
+                    <div class="textbarTop">
+                            <INPUT type="button" class="btn btn-info" value="1" onclick="btn1()"><br><br>
+                            <div id="links">
+                            <a href="index-1.html">::1::</a><br>
+                            <a href="index-2.html">::2::</a><br>
+                            <a href="index-3.html">::3::</a>
+                        </div>
                     </div>
-                    <div id="links">
-                        <a href="index-1.html">::1::</a><br>
-                        <a href="index-2.html">::2::</a><br>
-                        <a href="index-3.html">::3::</a>
+                   <p id="test"></p>
+                    <div class="textbar">
+                        <ul>
+                            Это свойство может принимать 3 значения:
+                            <li>normal - устанавливается и используется по умолчанию. Под умолчанием подразумевается, что перенос строк не будет осуществляться. Перенос будет только в случае использования html тэга &lt;br&gt;.</li>
+                            <li>break-all - делает перенос всех строк, имеющих в качестве окончания символ пробела, а также в местах где есть HTML тэг &lt;br&gt;.Обрезка строк происходит в соответствии с рамками блока.</li>
+                            <li>keep-all - действует как normal. Это свойство используется для азиатских стран с учетом специфики их языка.</li>
+                        </ul>
                     </div>
-                    <p id="test"></p>
                 </div>
                     <!--<div id="clear"></div>-->
-                        <div id="footer" class="middle"><p>© Click, 2016</p></div>
+                        <div id="footer" class="middle"><p>© Click, 2016</p>
+                            <div id="scrollup"><img alt="Прокрутить вверх" src="http://dedushka.org/demo/scrollup/up.png"></div>
+                        </div>
 </div>
-
 </body>
 </html>
