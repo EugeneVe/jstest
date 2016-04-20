@@ -1,25 +1,18 @@
 /**
  * Created by click on 25.07.15.
  */
-
 /*______________________________________________SCROLLUP FOR PAGE START______________________________________________*/
-
-jQuery( document ).ready(function() {
-    jQuery('#scrollup img').mouseover( function(){
-        jQuery( this ).animate({opacity: 0.65},100);
-    }).mouseout( function(){
-        jQuery( this ).animate({opacity: 1},100);
-    }).click( function(){
-        window.scroll(0 ,0);
-        return false;
-    });
-
-    jQuery(window).scroll(function(){
-        if ( jQuery(document).scrollTop() > 0 ) {
-            jQuery('#scrollup').fadeIn('fast');
+$(function() {
+    "use strict";
+    $(window).scroll(function() {
+        if($(this).scrollTop() != 0) {
+            $('#scrollup').fadeIn();
         } else {
-            jQuery('#scrollup').fadeOut('fast');
+            $('#scrollup').fadeOut();
         }
+    });
+    $('#scrollup').click(function() {
+        $('body,html').animate({scrollTop:0},400);
     });
 });
 /*_________________________________________SCROLLUP FOR PAGE END___________________________________________________*/
@@ -222,12 +215,23 @@ function pushit7 () {
 }
 
 function pushit8 () {
-/*    prompt('type 50+20');
-        var i = (), u = ();
-            if (i+u) alert(i+u);
-    else alert("NO");*/
+    function isInteger(num) {
+        return (num^0)===num;
     }
+    alert(isInteger(1));
+    alert(isInteger(1.3));
+    alert(isInteger(2));
+}
 
 function btn1 () {
 
 }
+
+//_____________________________________GALLERY_SETTINGS__________________________________________________________
+
+$(function () {
+
+    $('.pics').glisse({speed: 500, changeSpeed: 550, effect:'roll', fullscreen: true});
+});
+
+//______________________________________GALLERY_END_______________________________________________________________

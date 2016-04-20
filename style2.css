@@ -88,6 +88,18 @@ html, body {
 
 .textbar {
     background-color: #ffffff/*rgba(221, 221, 221, 0.9)*/;
+    margin: 0 10px 10px 10px;
+    text-align: justify;
+    word-break: keep-all;
+    font-family: Helvetica;
+    color: #262626;
+    border-radius: 3px;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid #dadada;
+}
+
+.textbar2 {
+    background-color: #ffffff/*rgba(221, 221, 221, 0.9)*/;
     margin: 0 10px 0 10px;
     text-align: justify;
     word-break: keep-all;
@@ -121,6 +133,31 @@ li {
     height: 7em;
 }
 
+.pics {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    height: auto;
+    padding: 2px 2px 2px 2px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #091f2b;
+    margin: 2px 2px 2px 2px;
+}
+.pics:hover{
+    box-shadow: 0 0 5px #3b96dd;
+    opacity: 0.8;
+}
+
+/*_________________________________IMAGES START____________________________________________________________________*/
+
+/*img {
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+}*/
+
+/*_________________________________IMAGES END______________________________________________________________________*/
 
 /* ________________________________FONT STYLE_____________________________________________________________________ */
 a{
