@@ -1,0 +1,53 @@
+.photos{cursor:pointer; }
+
+/* Glisse: Overlay */
+/*#glisse-overlay {
+  background: rgba(0,0,0.3);}*/
+
+#glisse-close {
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    position: fixed;
+    top:40px;
+    right:40px;
+    content: url("img/close.png");}
+
+/* Prev/Next button */
+.glisse-next a {
+    cursor:pointer;
+    width: 40px;
+    position: fixed;
+    height: 40px;
+    display: block;
+    bottom: 10px;
+    content: url("img/right.png");}
+
+.glisse-prev a {
+    cursor:pointer;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    display: block;
+    bottom: 10px;
+    content: url("img/left.png");}
+
+.glisse-next a {
+    left: 50%;
+    margin-left: 20px;
+    margin-bottom: 10px;}
+
+.glisse-prev a {
+    left: 50%;
+    margin-left: -80px;
+    margin-bottom: 10px;}
+
+/* Legend */
+/*.glisse-legend {
+  position:fixed;
+  display:block;
+  bottom:10px;
+  left:10px;
+  color:white;
+  }*/
+
