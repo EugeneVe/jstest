@@ -231,7 +231,7 @@ function btn1 () {
 
 $(function () {
 
-    $('.pics').glisse({speed: 500, changeSpeed: 550, effect:'roll', fullscreen: true});
+    $('.pics').glisse({speed: 500, changeSpeed: 500, effect:'bounce', fullscreen: true});
 });
 
 //______________________________________GALLERY_END_______________________________________________________________
