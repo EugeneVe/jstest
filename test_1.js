@@ -1,8 +1,9 @@
+$(document).ready(function(){
 
-"use strict";
-document.onkeydown = function(evt) {
-    evt = evt || window.event;
-    if (evt.keyCode == 37) {
-        window.open("http://urlgalleries.net");
-    }
-};
+    $(".btn-slide").click(function(){
+        $("#panel").slideToggle("slow");
+        $(this).toggleClass("active"); return false;
+    });
+
+
+});

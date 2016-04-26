@@ -3,20 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>JavaScript test site!!!</title>
+    <link href="slidepannel.css" rel="stylesheet" type="text/css" />
     <link href="style2.css" rel="stylesheet" type="text/css" />
     <link href="gallery/glisse.css" rel="stylesheet" type="text/css" />
     <link href="app.css" rel="stylesheet" type="text/css" />
     <!--script with path of js-->
-    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js'></script>
     <script src="gallery/glisse.js"></script>
     <script async src="test.js"></script>
+    <script async src="test_1.js"></script>
     <!--<script async src="/js/background.js"></script>-->
 </head>
 <body>
 <div id="wrap">
     <div id="header" class="middle">
         <div class="logo"><img src="/img/logo.png"></div>
-        <h2>JS тестилка!</h2>
+        <h2>JS тестилка</h2>
     </div>
     <!--<div id="line"></div>-->
             <div id="left_menu">
@@ -53,10 +55,15 @@
                         </ul>
                     </div>
                     <div class="textbar2"><center>
+
+                        <div id="panel">
                             <img class="pics" src="http://s.picsfab.com/static/contents/images/d/8/c/bbf2f7561c16bad293a3dc0933346.jpg" data-glisse-big="http://picsfab.com/download/image/195550/1920x1200_nebo-tuchi-goryi-les-reka-kamni.jpg" rel="group1"/>
                             <img class="pics" src="http://s.picsfab.com/static/contents/images/7/3/1/ebdbd094951fea52e49c245e19953.jpg" data-glisse-big="http://picsfab.com/download/image/196144/1920x1200_photographer-bryunetka-poziruet-doroga-figurka.jpg" rel="group1"/>
                             <img class="pics" src="http://s.picsfab.com/static/contents/images/e/c/3/374c1e703e1493695f1ddc214b119.jpg" data-glisse-big="http://picsfab.com/download/image/195434/1920x1200_goryi-doroga-krasnyij-superkar-skorost.jpg" rel="group1"/>
-                        </center>
+                        </div>
+                        <!--<p class="slide">--><a href="#" class="btn-slide"><span>Tap to slide Down</span></a>
+                        <!--</p>-->
+                    </center>
                     </div>
                 </div>
                     <!--<div id="clear"></div>-->

@@ -50,6 +50,7 @@ html, body {
     position: absolute;
     /* old margin-top: 120px;    position: absolute;    width: 128px;    height: 400px;    text-align: center;*/
     float: left;
+    margin-left: 10px;
     width: 128px;
     text-align: center;
     /*margin-top: 5px;*/
@@ -63,13 +64,14 @@ html, body {
     /* old margin-left: 672px;    margin-top: 120px;    position: absolute;    width: 128px;    height: 400px;    text-align: center;*/
     float: right;
     width: 128px;
+    margin-right: 10px;
     text-align: center;
     /*margin-top: 5px;*/
 }
 
 #content {
     /* old position: absolute;    margin-left: 128px;    margin-top: 120px;    !*width: 544px;*!    width: 68%;    height: 400px;    text-align: center;*/
-    margin: 50px 128px 0  128px;
+    margin: 50px 138px 0  138px;
     height: 200px;
     text-align: center;
 }
@@ -137,7 +139,7 @@ li {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 320px;
+    width: 315px;
     height: auto;
     padding: 2px 2px 2px 2px;
     border-radius: 10px;
@@ -212,8 +214,6 @@ h2 {
     border: 1px solid transparent;
     border-radius: 4px;
     width: 90px;
-
-
 }
 .btn:focus,
 .btn:active:focus,

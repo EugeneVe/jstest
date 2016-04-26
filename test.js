@@ -230,8 +230,8 @@ function btn1 () {
 //_____________________________________GALLERY_SETTINGS__________________________________________________________
 
 $(function () {
-
-    $('.pics').glisse({speed: 500, changeSpeed: 500, effect:'bounce', fullscreen: true});
+    "use strict";
+    $ ('.pics').glisse({speed: 500, changeSpeed: 500, effect:'bounce', fullscreen: true});
 });
 
 //______________________________________GALLERY_END_______________________________________________________________
