@@ -4,7 +4,7 @@
 /*______________________________________________SCROLLUP FOR PAGE START______________________________________________*/
 $(function() {
     "use strict";
-    $(window).scroll(function() {
+    $('.tabs_box').scroll(function() {
         if($(this).scrollTop() != 0) {
             $('#scrollup').fadeIn();
         } else {
@@ -12,7 +12,7 @@ $(function() {
         }
     });
     $('#scrollup').click(function() {
-        $('body,html').animate({scrollTop:0},400);
+        $('.tabs_box').animate({scrollTop:0},400);
     });
 });
 /*_________________________________________SCROLLUP FOR PAGE END___________________________________________________*/
