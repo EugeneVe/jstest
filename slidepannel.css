@@ -4,6 +4,7 @@ a:focus {
 #panel {
     background: none;
     display: none;
+    overflow: hidden;
     /*border-bottom: 1px;*/
 }
 
@@ -44,7 +45,7 @@ a:focus {
 }
 
 .btn-slide.active:after {
-    content: 'Tap to slide Up';
+    content: 'Close gallery ▲';
 }
 
 .btn-slide:hover {
@@ -52,61 +53,3 @@ a:focus {
     background-color: #31b0d5;
     border-color: #269abc;
 }
-
-
-/*.btn-slide:focus,
-.btn-slide.focus {
-    color: #fff;
-    background-color: #31b0d5;
-    border-color: #1b6d85;
-}*/
-
-/*.btn-slide.active {
-    background-color: #2b542c;
-}*/
-
-/*.btn-slide:active,
-.btn-slide.active,
-.open > .dropdown-toggle.btn-slide {
-    color: #fff;
-    background-color: #31b0d5;
-    border-color: #269abc;
-}
-.btn-slide:active:hover,
-.btn-slide.active:hover,
-.open > .dropdown-toggle.btn-slide:hover,
-.btn-slide:active:focus,
-.btn-slide.active:focus,
-.open > .dropdown-toggle.btn-slide:focus,
-.btn-slide:active.focus,
-.btn-slide.active.focus,
-.open > .dropdown-toggle.btn-slideo.focus {
-    color: #fff;
-    background-color: #269abc;
-    border-color: #1b6d85;
-}
-.btn-slide:active,
-.btn-slide.active,
-.open > .dropdown-toggle.btn-slide {
-    background-image: none;
-}
-
-.btn-slide .badge {
-    color: #5bc0de;
-    background-color: #fff;
-}*/
-/*.slide {
-    margin: 0;
-    padding: 0;
-}*/
-/*.btn-slide {
-    text-align: center;
-    width: 144px;
-    height: 31px;
-    padding: 10px 10px 0 0;
-    margin: 0 auto;
-    display: block;
-    font: bold 120%/100% Arial, Helvetica, sans-serif;
-    color: #fff;
-    text-decoration: none;
-}*/

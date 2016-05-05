@@ -8,28 +8,34 @@
     <link href="gallery/glisse.css" rel="stylesheet" type="text/css" />
     <link href="app.css" rel="stylesheet" type="text/css" />
     <!--script with path of js-->
-    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js'></script>
-    <script src="gallery/glisse.js"></script>
-    <script async src="test.js"></script>
-    <script async src="test_1.js"></script>
-    <!--<script async src="/js/background.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="gallery/glisse.js" async></script>
+    <script src="js/tabs.js" async></script>
+    <script src="test.js" async></script>
 </head>
 <body>
 <div id="wrap">
     <div id="header" class="middle">
         <div class="logo"><img src="/img/logo.png"></div>
-        <h2>JS тестилка</h2>
+        <h2>HTML, CSS, JS test area</h2>
     </div>
-    <!--<div id="line"></div>-->
+    <div class="tabs_box">
+        <!--Начало навбара, все остальное внутри него-->
+        <ul class="tabs_menu">
+            <li><a href="#tab1" class="active">Main</a></li>
+            <li><a href="#tab2">Contacts</a></li>
+            <li><a href="#tab3">Help</a></li>
+        </ul>
+            <div class="tab" id="tab1">
             <div id="left_menu">
-                <INPUT type="button" class="btn btn-info" value="Push it 1" onclick="pushit1()"><br>
-                <INPUT type="button" class="btn btn-info" value="Push it 2" onclick="pushit2()"><br>
-                <INPUT type="button" class="btn btn-info" value="Push it 3" onclick="pushit3()"><br>
-                <INPUT type="button" class="btn btn-info" value="Push it 4" onclick="pushit4()"><br>
-                <INPUT type="button" class="btn btn-info" value="Push it 5" onclick="pushit5()"><br>
-                <INPUT type="button" class="btn btn-info" value="Push it 6" onclick="pushit6()"><br>
-                <INPUT type="button" class="btn btn-info" value="Test button" onclick="pushit7()"><br>
-                <INPUT type="button" class="btn btn-info" value="Empty" onclick="pushit8()">
+                    <INPUT type="button" class="btn btn-info" value="Push it 1" onclick="pushit1()"><br>
+                    <INPUT type="button" class="btn btn-info" value="Push it 2" onclick="pushit2()"><br>
+                    <INPUT type="button" class="btn btn-info" value="Push it 3" onclick="pushit3()"><br>
+                    <INPUT type="button" class="btn btn-info" value="Push it 4" onclick="pushit4()"><br>
+                    <INPUT type="button" class="btn btn-info" value="Push it 5" onclick="pushit5()"><br>
+                    <INPUT type="button" class="btn btn-info" value="Push it 6" onclick="pushit6()"><br>
+                    <INPUT type="button" class="btn btn-info" value="Test button" onclick="pushit7()"><br>
+                    <INPUT type="button" class="btn btn-info" value="Empty" onclick="pushit8()">
             </div>
                 <div id="right_menu">
                     <div id="btpushright">
@@ -39,7 +45,7 @@
                 <div id="content">
                     <div class="textbarTop">
                             <INPUT type="button" class="btn btn-info" value="1" onclick="btn1()"><br><br>
-                            <div id="links">
+                        <div id="links">
                             <a href="index-1.html">::1::</a><br>
                             <a href="index-2.html">::2::</a><br>
                             <a href="index-3.html">::3::</a>
@@ -61,11 +67,16 @@
                             <img class="pics" src="http://s.picsfab.com/static/contents/images/7/3/1/ebdbd094951fea52e49c245e19953.jpg" data-glisse-big="http://picsfab.com/download/image/196144/1920x1200_photographer-bryunetka-poziruet-doroga-figurka.jpg" rel="group1"/>
                             <img class="pics" src="http://s.picsfab.com/static/contents/images/e/c/3/374c1e703e1493695f1ddc214b119.jpg" data-glisse-big="http://picsfab.com/download/image/195434/1920x1200_goryi-doroga-krasnyij-superkar-skorost.jpg" rel="group1"/>
                         </div>
-                        <!--<p class="slide">--><a href="#" class="btn-slide"><span>Tap to slide Down</span></a>
+                        <!--<p class="slide">--><a href="#" class="btn-slide"><span>Open gallery ▼</span></a>
                         <!--</p>-->
                     </center>
                     </div>
                 </div>
+        </div>
+        <div class="tab" id="tab2"><p>werwrwerwerwerwe</p></div>
+        <div class="tab" id="tab3"><p>3453242355452345</p></div>
+        <!--Конец навбара, все внутри него-->
+        </div>
                     <!--<div id="clear"></div>-->
                         <div id="footer" class="middle"><p>© Click, 2016</p>
                             <div id="scrollup"><img alt="Прокрутить вверх" src="http://dedushka.org/demo/scrollup/up.png"></div>

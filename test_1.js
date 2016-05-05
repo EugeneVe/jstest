@@ -1,3 +1,4 @@
+/*
 $(document).ready(function(){
 
     $(".btn-slide").click(function(){
@@ -6,4 +7,4 @@ $(document).ready(function(){
     });
 
 
-});
+});*/

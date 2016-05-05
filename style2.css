@@ -71,7 +71,7 @@ html, body {
 
 #content {
     /* old position: absolute;    margin-left: 128px;    margin-top: 120px;    !*width: 544px;*!    width: 68%;    height: 400px;    text-align: center;*/
-    margin: 50px 138px 0  138px;
+    margin: 0 138px 0  138px;
     height: 200px;
     text-align: center;
 }
@@ -151,7 +151,7 @@ li {
     opacity: 0.8;
 }
 
-/*_________________________________IMAGES START____________________________________________________________________*/
+/*_________________________________IMAGES START_________________________________________________________________*/
 
 /*img {
     display: flex;
@@ -159,9 +159,9 @@ li {
     margin: 0 auto;
 }*/
 
-/*_________________________________IMAGES END______________________________________________________________________*/
+/*_________________________________IMAGES END___________________________________________________________________*/
 
-/* ________________________________FONT STYLE_____________________________________________________________________ */
+/* ________________________________FONT STYLE__________________________________________________________________ */
 a{
     margin:auto;
     color: #6d7d77;
@@ -716,9 +716,9 @@ input[type="reset"].btn-block,
 input[type="button"].btn-block {
     width: 100%;
 }
-/* ________________________________HERE IS PARTS OF BOOTSTRAP.CSS END_______________________________________________*/
+/* ________________________________HERE IS PARTS OF BOOTSTRAP.CSS END_____________________________________________*/
 
-/*_____________________________________________SCROLLUP FOR PAGE START______________________________________________*/
+/*_____________________________________________SCROLLUP FOR PAGE START____________________________________________*/
 #scrollup {
     position: fixed; /* фиксированная позиция */
     opacity: 0.8; /* прозрачность */
@@ -732,4 +732,56 @@ input[type="button"].btn-block {
     display: none; /* спрятать блок */
     cursor: pointer;
 }
-/*_________________________________________SCROLLUP FOR PAGE END___________________________________________________*/
+/*_________________________________________SCROLLUP FOR PAGE END__________________________________________________*/
+
+/*_________________________________________TAB_MENU_START________________________________________________________*/
+
+.tabs_box {
+    position: fixed;
+    width: 100%;
+    bottom: 20px;
+    background: none;
+    top: 40px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+    overflow: auto;
+}
+
+#tab2, #tab3 {
+    display: none;
+}
+
+.tab {
+    padding: 0 10px;
+}
+
+.tabs_menu {
+    display: table-row;
+}
+
+.tabs_menu li {
+    display: table-cell;
+    width: auto;
+}
+
+.tabs_menu li a {
+    display: table-cell;
+    width: 2000px;
+    text-align: center;
+    text-decoration: none;
+    background: #f8f8f8;
+    color: #292929;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.tabs_menu li:first-child a {
+    border-left: 0;
+}
+
+.tabs_menu .active {
+    background: #69b0f3;
+    color: #fff;
+}
+
+/*______________________________________TAB_MENU_END________________________________________________________*/
