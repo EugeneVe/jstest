@@ -17,6 +17,36 @@ html, body {
     margin: 0 auto 0 auto;
 }
 
+.wrap1 {
+    min-width: 640px;
+    max-width: 100%;
+    height: auto;
+    min-height: 50%;
+    margin: 10px auto 0 auto;
+}
+
+.wrap2 {
+    min-width: 640px;
+    max-width: 100%;
+    height: auto;
+    min-height: 50%;
+    margin: 10px auto 0 auto;
+}
+
+.wrap3 {
+    min-width: 640px;
+    max-width: 100%;
+    height: auto;
+    min-height: 50%;
+    margin: 10px auto 0 auto;
+}
+.wrap4 {
+    min-width: 640px;
+    max-width: 100%;
+    height: auto;
+    min-height: 50%;
+    margin: 10px auto 0 auto;
+}
 #header {
     z-index: 1;
     position: fixed;
@@ -746,7 +776,7 @@ input[type="button"].btn-block {
     overflow: auto;
 }
 
-#tab2, #tab3 {
+#tab2, #tab3, #tab4 {
     display: none;
 }
 
