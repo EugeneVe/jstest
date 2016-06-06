@@ -9,6 +9,6 @@ $user = json_decode($s, true);
 if (isset($user))
 {
     $_SESSION['user']=$user;
-    header("Location: hello.php");
+    header("Location: welcome.php");
     exit;
 }

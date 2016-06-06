@@ -131,64 +131,6 @@ function pushit6 () {
             }else{ alert('Get out');}
 }
 
-
-//document.onkeydown = function(evt) {
-//    evt = evt || window.event;
-//    if (evt.keyCode == 27) {
-//        window.open("http://urlgalleries.net");
-//    }
-//};
-
-
-//dig:  for (var i = 0; i < 100; i++)
-//    {
-//        var input = prompt('Type digit > then 100 '+input+'','');
-//        if (!input) break dig;
-//        else if (input > 100) break dig;
-//    }
-//
-//alert('Done');
-
-
-//var i=0;
-//    for ( i=2; i<=10; i++){
-//        if ( i%2==1) continue;
-//        alert( i );
-//    }
-
-//(age <= 13 || age >= 91) alert('false');
-//var username = prompt('What is your name ', '');
-//if ( username == 'Click' ) alert ('This is it');
-//else {
-//    alert('Wrong');
-//}
-// // from my lesson #comparison
-//var a = 'Apolon', b = 'Ground';
-//alert( a < b );
-
-//var planet = "Earth", username = "Click";
-//alert (planet);
-//alert (username);
-
-//var count = 2+3;
-//    alert (count);
-
-//var a = 1, b = 1, c, d;
-//
-//c = ++a; alert(c); // 2
-//d = b++; alert(d); // 1
-//
-//c = (2+ ++a); alert(c); // 5
-//d = (2+ b++); alert(d); // 4
-//
-//alert(a); // 3
-//alert(b); // 3
-
-// from my lesson #comparison
-//var a = +'82', b = +'24';
-//have to use  plus + to see digit
-//alert( a < b );
-
 function pushit7 () {
     var testalert = prompt('Please type any digits');
         if (testalert == null) alert('see you');
@@ -208,11 +150,15 @@ function pushit8 () {
     alert(isInteger(2));
 }
 
+function pushit9 () {
+    document.location.replace("http://www.click.s-host.net")
+}
+
 function btn1 () {
 
 }
 
-//_____________________________________GALLERY_SETTINGS__________________________________________________________
+//_____________________________________GALLERY_SETTINGS___________________________________________________________
 
 $(function () {
     "use strict";
@@ -224,8 +170,17 @@ $(function () {
 //______________________________________GALLERY_SPOILER_BTN_______________________________________________________
 $(document).ready(function(){
     "use strict";
-    $(".btn-slide").click(function(){
-        $("#panel").slideToggle(400);
+    $(".btn-slide1").click(function(){
+        $("#panel1").slideToggle(120);
+        $(this).toggleClass("active"); return false;
+    });
+});
+
+
+$(document).ready(function(){
+    "use strict";
+    $(".btn-slide2").click(function(){
+        $("#panel2").slideToggle(120);
         $(this).toggleClass("active"); return false;
     });
 });

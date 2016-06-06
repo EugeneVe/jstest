@@ -19,19 +19,19 @@
 <body>
 <div id="wrap">
     <div id="header" class="middle">
-        <div id="login">
-            <script src="//ulogin.ru/js/ulogin.js"></script>
-            <div id="uLogin" data-ulogin="display=panel;fields=first_name,last_name;providers=facebook,vkontakte,google;hidden=twitter,odnoklassniki;redirect_uri=http%3A%2F%2Fwww.click.s-host.net/welcome"></div>
+        <div class="exit">
+            <INPUT type="button" class="btnex" value="Exit" onclick="pushit9()">
         </div>
-        <div class="logo"><a href="http://click.s-host.net"><img src="/img/logo.png"></a></div>
-        <h2>HTML, CSS, JS test area!!!</h2>
-        </div>
+        <div class="logo"><a href="http://click.s-host.net/welcome.php"><img src="/img/logo.png"></a></div>
+        <h2>Welcome to Click JS test</h2>
+    </div>
     <div class="tabs_box">
         <!--Начало навбара, все остальное внутри него-->
         <ul class="tabs_menu">
             <li><a href="#tab1" class="active">Main</a></li>
             <li><a href="#tab2">Comments "DISQUS"</a></li>
             <li><a href="#tab3">Help</a></li>
+            <li><a href="#tab4">hide page</a></li>
         </ul>
             <div class="tab" id="tab1">
             <div class="wrap1">
@@ -43,7 +43,8 @@
                     <INPUT type="button" class="btn btn-info" value="Push it 5" onclick="pushit5()"><br>
                     <INPUT type="button" class="btn btn-info" value="Push it 6" onclick="pushit6()"><br>
                     <INPUT type="button" class="btn btn-info" value="Test button" onclick="pushit7()"><br>
-                    <INPUT type="button" class="btn btn-info" value="Empty" onclick="pushit8()">
+                    <INPUT type="button" class="btn btn-info" value="Empty" onclick="pushit8()"><br>
+
             </div>
                 <div id="right_menu">
                     <div id="btpushright">
@@ -69,7 +70,6 @@
                         </ul>
                     </div>
                     <div class="textbar2"><center>
-
                         <div id="panel1">
                             <img class="pics" src="http://s.picsfab.com/static/contents/images/d/8/c/bbf2f7561c16bad293a3dc0933346.jpg" data-glisse-big="http://picsfab.com/download/image/195550/1920x1200_nebo-tuchi-goryi-les-reka-kamni.jpg" rel="group1"/>
                             <img class="pics" src="http://s.picsfab.com/static/contents/images/7/3/1/ebdbd094951fea52e49c245e19953.jpg" data-glisse-big="http://picsfab.com/download/image/196144/1920x1200_photographer-bryunetka-poziruet-doroga-figurka.jpg" rel="group1"/>
@@ -89,15 +89,28 @@
                 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
             </div>
         </div>
-
         <div class="tab" id="tab3">
             <div class="wrap3">
                 <?php
                 include_once ('lib/curl_query.php');
-
                 $html = curl_get('http://www.goodfon.su');
                 echo $html;
                 ?>
+            </div>
+        </div>
+        <div class="tab" id="tab4">
+            <div class="wrap4">
+                <center>
+                    <div id="panel2">
+                        <img class="pics" src="http://s.picsfab.com/static/contents/images/7/4/5/f8501e50141b48c57e32b7157edc8.jpg" data-glisse-big="http://picsfab.com/download/image/200429/1920x1080_photographer-devushka-model-foto-figura-telo.jpg" rel="group2"/>
+                        <img class="pics" src="http://s.picsfab.com/static/contents/images/d/6/9/dc0cc745d53b3a0a5ce130d23b768.jpg" data-glisse-big="http://picsfab.com/download/image/107834/1920x1080_lacey-banghard-popa-myach-spina-basketbol.jpg" rel="group2"/>
+                        <img class="pics" src="http://s.picsfab.com/static/contents/images/1/8/f/faffcc68ce26914f02e96764563ca.jpg" data-glisse-big="http://picsfab.com/download/image/200198/1920x1080_photographer-devushka-shatenka.jpg" rel="group2"/>
+                        <img class="pics" src="http://s.picsfab.com/static/contents/images/1/e/e/aa0d2d1270e72efa9ef075185e5f8.jpg" data-glisse-big="http://picsfab.com/download/image/200196/1920x1080_photographer-devushka-bryunetka.jpg" rel="group2"/>
+                    </div>
+                    <!--<p class="slide">-->
+                    <a href="#panel2" class="btn-slide2"><span>Open gallery ▼</span></a>
+                    <!--</p>-->
+                </center>
             </div>
         </div>
         <!--Конец навбара, все внутри него-->
