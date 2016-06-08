@@ -1,14 +1,14 @@
 a:focus {
     outline: none;
 }
-#panel {
+#panel1 {
     background: none;
     display: none;
     overflow: hidden;
     /*border-bottom: 1px;*/
 }
 
-.btn-slide {
+.btn-slide1 {
     display: inline-block;
     padding: 6px /*12px*/;
     margin-bottom: 0;
@@ -31,7 +31,7 @@ a:focus {
     width: auto;
 }
 
-.btn-slide {
+.btn-slide1 {
     color: #fff;
     background-color: #5bc0de;
     border-color: #46b8da;
@@ -40,15 +40,69 @@ a:focus {
     margin-top: 6px;
 }
 
-.btn-slide.active span {
+.btn-slide1.active span {
     display: none;
 }
 
-.btn-slide.active:after {
+.btn-slide1.active:after {
     content: 'Close gallery ▲';
 }
 
-.btn-slide:hover {
+.btn-slide1:hover {
+    color: #fff;
+    background-color: #31b0d5;
+    border-color: #269abc;
+}
+/*____________________________PANEL_2_HELLO_______________________________________*/
+
+#panel2 {
+    background: none;
+    display: none;
+    overflow: hidden;
+    /*border-bottom: 1px;*/
+}
+
+.btn-slide2 {
+    display: inline-block;
+    padding: 6px /*12px*/;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: left;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    width: auto;
+}
+
+.btn-slide2 {
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+    -webkit-box-shadow: 3px 3px 3px #363f39;
+    box-shadow: 3px 3px 3px #36403a;
+    margin-top: 6px;
+}
+
+.btn-slide2.active span {
+    display: none;
+}
+
+.btn-slide2.active:after {
+    content: 'Close gallery ▲';
+}
+
+.btn-slide2:hover {
     color: #fff;
     background-color: #31b0d5;
     border-color: #269abc;

@@ -74,6 +74,7 @@ html, body {
     margin: 0 138px 0  138px;
     height: 200px;
     text-align: center;
+    margin-top: 8px;
 }
 
 .textbarTop {
@@ -112,11 +113,11 @@ html, body {
     border: 1px solid #dadada;
 }
 
-ul {
+ul.content {
     padding: 10px 10px 10px 10px;
 }
 
-li {
+li.content {
     list-style-image: url("http://www.addtask.com/images/star-on10.png");
 }
 
@@ -192,6 +193,42 @@ h2 {
     text-shadow: 1px 1px 2px dimgray;
 }
 
+.exit {
+    position: absolute;
+    right: 10px;
+    top: 3px;
+}
+.btnex {
+    -webkit-box-shadow:0px 0px 3px #363f39; /*insert   to make shadow inside*/
+    box-shadow: 0px 0px 3px #36403a;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #2b2b2b;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 60px;
+    width: 100%;
+}
+.btnex:hover {
+    color: #fff;
+    background-color: #31b0d5;
+    border-color: #269abc;
+}
 /* ________________________________HERE IS PARTS OF BOOTSTRAP.CSS___________________________________________________*/
 .btn {
     display: inline-block;
@@ -734,7 +771,7 @@ input[type="button"].btn-block {
 }
 /*_________________________________________SCROLLUP FOR PAGE END__________________________________________________*/
 
-/*_________________________________________TAB_MENU_START________________________________________________________*/
+/*_________________________________________TAB_MENU_START_________________________________________________________*/
 
 .tabs_box {
     position: fixed;
@@ -746,7 +783,7 @@ input[type="button"].btn-block {
     overflow: auto;
 }
 
-#tab2, #tab3 {
+#tab2, #tab3, #tab4 {
     display: none;
 }
 
@@ -775,6 +812,7 @@ input[type="button"].btn-block {
     padding: 10px 0;
 }
 
+
 .tabs_menu li:first-child a {
     border-left: 0;
 }
@@ -782,6 +820,37 @@ input[type="button"].btn-block {
 .tabs_menu .active {
     background: #69b0f3;
     color: #fff;
+    font-weight: bold;
 }
 
-/*______________________________________TAB_MENU_END________________________________________________________*/
+/*___animation for hover___*/
+.tabs_menu li a {
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.tabs_menu li a:hover {
+    background: #7ac2f3;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 12px;
+}
+/*___end animation for hover___*/
+/*____________________________________________TAB_MENU_END________________________________________________________*/
+
+/*____________________________________________AUTH_START________________________________________________________*/
+
+#login {
+    z-index: 0;
+    position: absolute;
+    right: 0;
+    top: 3px;
+}
+
+/*____________________________________________AUTH_END________________________________________________________*/
+.delete {
+    cursor:pointer;
+}
