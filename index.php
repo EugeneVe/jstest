@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="gallery_btn.css"/>
 </head>
 <body>
-<!--script with path of js-->
+<!-- script with path of js -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <script type="text/javascript" src="loginform/jquery.leanModal.min.js"></script>
 <script defer src="loginform/loginform.js"></script>
