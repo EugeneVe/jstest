@@ -3,8 +3,11 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>JavaScript test site!!!</title>
+    <link rel="stylesheet" type="text/css" href="test.css" />
     <link rel="stylesheet" type="text/css" href="reset.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="loginform/loginstyle.css" />
     <link rel="stylesheet" type="text/css" href="slidepannel.css" />
     <link rel="stylesheet" type="text/css" href="gallery/glisse.css" />
     <link rel="stylesheet" type="text/css" href="gallery_btn.css"/>
@@ -12,16 +15,33 @@
 <body>
 <!--script with path of js-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script type="text/javascript" src="loginform/jquery.leanModal.min.js"></script>
+<script defer src="loginform/loginform.js"></script>
 <script defer src="gallery/glisse.js"></script>
 <script async src="js/tabs.js"></script>
 <script async src="test.js"></script>
 <script async src="js/disqus.js"></script>
 <script async src="//clickukr.disqus.com/count.js" id="dsq-count-scr"></script>
 <script async src="js/scrolltop.js"></script>
+<div class="blockForm">
+    <div class="textfoms">
+        <h3>Create account</h3><br>
+        <div class="exitDesc"><h3>Exit</h3></div>
+        <div class="SignInBtn"><h3>Sign in</h3></div>
+        <h1>Email</h1>
+        <input type="text" class="textform" placeholder="login"><br><br>
+        <h1>Password</h1>
+        <input type="password" class="textform" placeholder="password"><br>
+    </div>
+</div>
+<div class="desc">
+</div>
 <div id="wrap">
+
     <div id="header" class="middle">
+
         <div id="login">
-            <script src="//ulogin.ru/js/ulogin.js"></script>
+            <script src="http://ulogin.ru/js/ulogin.js"></script>
             <div id="uLogin" data-ulogin="display=panel;fields=first_name,last_name;providers=facebook,vkontakte,google;hidden=twitter,odnoklassniki;redirect_uri=http%3A%2F%2Fwww.click.s-host.net/welcome"></div>
         </div>
         <div class="logo"><a href="http://click.s-host.net"><img src="/img/logo.png"></a></div>
@@ -48,13 +68,106 @@
             </div>
                 <div id="right_menu">
                     <div id="btpushright">
-                        <INPUT type="button" class="btn btn-info" value="Sign in" onclick="pushit()">
+                        <INPUT id="desc_open" type="button" class="btn btn-info" value="Sign in" onclick="btn1()"><br>
+                        <INPUT type="button" class="btn btn-info" value="test8" onclick="pushit()">
                     </div>
                 </div>
                 <div id="content">
                     <div class="textbarTop">
-                            <INPUT type="button" class="btn btn-info" value="1" onclick="btn1()"><br><br>
+
                         <div id="links">
+
+                            <!--login form start-->
+                            <div class="container">
+<!--                                <h1>Popup Login & Signup with jQuery</h1>-->
+<!--                                <a id="modal_trigger" href="#modal" class="btnlogin">Click here to Login or register</a>-->
+
+                                <div id="modal" class="popupContainer" style="display:none;">
+                                    <header class="popupHeader">
+                                        <span class="header_title">Login</span>
+                                        <span class="modal_close"><i class="fa fa-times"></i></span>
+                                    </header>
+
+                                    <section class="popupBody">
+                                        <!-- Social Login -->
+                                        <div class="social_login">
+                                            <div class="">
+                                                <a href="#" class="social_box fb">
+                                                    <span class="icon"><i class="fa fa-facebook"></i></span>
+                                                    <span class="icon_title">Connect with Facebook</span>
+                                                </a>
+                                                <a href="#" class="social_box google">
+                                                    <span class="icon"><i class="fa fa-google-plus"></i></span>
+                                                    <span class="icon_title">Connect with Google</span>
+                                                </a>
+                                            </div>
+
+                                            <div class="centeredText">
+                                                <span>Or use your Email address</span>
+                                            </div>
+
+                                            <div class="action_btns">
+                                                <div class="one_half"><a href="#" id="login_form" class="btnlogin">Login</a></div>
+                                                <div class="one_half last"><a href="#" id="register_form" class="btnlogin">Sign up</a></div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Username & Password Login form -->
+                                        <div class="user_login">
+                                            <form>
+                                                <label>Email / Username</label>
+                                                <input type="text" />
+                                                <br />
+
+                                                <label>Password</label>
+                                                <input type="password" />
+                                                <br />
+
+                                                <div class="checkbox">
+                                                    <input id="remember" type="checkbox" />
+                                                    <label for="remember">Remember me on this computer</label>
+                                                </div>
+
+                                                <div class="action_btns">
+                                                    <div class="one_half"><a href="#" class="btnlogin back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
+                                                    <div class="one_half last"><a href="#" class="btnlogin btn_red">Login</a></div>
+                                                </div>
+                                            </form>
+
+                                            <a href="#" class="forgot_password">Forgot password?</a>
+                                        </div>
+
+                                        <!-- Register Form -->
+                                        <div class="user_register">
+                                            <form>
+                                                <label>Full Name</label>
+                                                <input type="text" />
+                                                <br />
+
+                                                <label>Email Address</label>
+                                                <input type="email" />
+                                                <br />
+
+                                                <label>Password</label>
+                                                <input type="password" />
+                                                <br />
+
+                                                <div class="checkbox">
+                                                    <input id="send_updates" type="checkbox" />
+                                                    <label for="send_updates">Send me occasional email updates</label>
+                                                </div>
+
+                                                <div class="action_btns">
+                                                    <div class="one_half"><a href="#" class="btnlogin back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
+                                                    <div class="one_half last"><a href="#" class="btnlogin btn_red">Register</a></div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                            <!--login form end-->
+
                             <a href="index-1.html">::1::</a><br>
                             <a href="index-2.html">::2::</a><br>
                             <a href="index-3.html">::3::</a>

@@ -179,16 +179,23 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     "use strict";
-    $(".btn-slide2").click(function(){
+  $(".btn-slide2").click(function(){
         $("#panel2").slideToggle(120);
         $(this).toggleClass("active"); return false;
     });
 });
 //______________________________________________END_______________________________________________________________
 $(document).ready(function(){
-
-    $("#panel2 .delete").click(function(){
-        $(this).parents("#panel2").animate({ opacity: "hide" }, "slow");
+    $("#desc_open").click(function() {
+        $(".desc").show();
+        $(".blockForm").slideDown(200);
+        return false;
     });
+});
 
+$(document).ready(function() {
+    $(".exitDesc, .desc").click(function() {
+        $(".desc").hide();
+        $(".blockForm").hide();
+    })
 });

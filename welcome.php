@@ -5,6 +5,7 @@
     <title>JavaScript test site!!!</title>
     <link rel="stylesheet" type="text/css" href="reset.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="slidepannel.css" />
     <link rel="stylesheet" type="text/css" href="gallery/glisse.css" />
     <link rel="stylesheet" type="text/css" href="gallery_btn.css"/>
@@ -97,11 +98,10 @@
             <div class="wrap4">
                 <center>
                     <div id="panel2">
-                        <img src="http://anton.shevchuk.name/wp-demo/jquery-tutorials/images/btn-delete.gif" class="delete">
-                        <img class="pics" src="http://s.picsfab.com/static/contents/images/7/4/5/f8501e50141b48c57e32b7157edc8.jpg" data-glisse-big="http://picsfab.com/download/image/200429/1920x1080_photographer-devushka-model-foto-figura-telo.jpg" rel="group2"/>
-                        <img class="pics" src="http://s.picsfab.com/static/contents/images/d/6/9/dc0cc745d53b3a0a5ce130d23b768.jpg" data-glisse-big="http://picsfab.com/download/image/107834/1920x1080_lacey-banghard-popa-myach-spina-basketbol.jpg" rel="group2"/>
-                        <img class="pics" src="http://s.picsfab.com/static/contents/images/1/8/f/faffcc68ce26914f02e96764563ca.jpg" data-glisse-big="http://picsfab.com/download/image/200198/1920x1080_photographer-devushka-shatenka.jpg" rel="group2"/>
-                        <img class="pics" src="http://s.picsfab.com/static/contents/images/1/e/e/aa0d2d1270e72efa9ef075185e5f8.jpg" data-glisse-big="http://picsfab.com/download/image/200196/1920x1080_photographer-devushka-bryunetka.jpg" rel="group2"/>
+                        <img class="pics" src="" data-glisse-big="" rel="group2"/>
+                        <img class="pics" src="" data-glisse-big="" rel="group2"/>
+                        <img class="pics" src="" data-glisse-big="" rel="group2"/>
+                        <img class="pics" src="" data-glisse-big="" rel="group2"/>
                     </div>
                     <!--<p class="slide">-->
                     <a href="#panel2" class="btn-slide2"><span>Open gallery ▼</span></a>
