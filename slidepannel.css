@@ -35,8 +35,8 @@ a:focus {
     color: #fff;
     background-color: #5bc0de;
     border-color: #46b8da;
-    -webkit-box-shadow: 3px 3px 3px #363f39;
-    box-shadow: 3px 3px 3px #36403a;
+    -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
     margin-top: 6px;
 }
 

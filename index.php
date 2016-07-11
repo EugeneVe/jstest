@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="gallery_btn.css"/>
 </head>
 <body>
-<!-- script with path of js -->
+<!--script with path of js-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <script type="text/javascript" src="loginform/jquery.leanModal.min.js"></script>
 <script defer src="loginform/loginform.js"></script>
@@ -25,27 +25,32 @@
 <script async src="js/scrolltop.js"></script>
 <div class="blockForm">
     <div class="textfoms">
-        <h3>Create account</h3><br>
-        <div class="exitDesc"><h3>Exit</h3></div>
-        <div class="SignInBtn"><h3>Sign in</h3></div>
-        <h1>Email</h1>
-        <input type="text" class="textform" placeholder="login"><br><br>
-        <h1>Password</h1>
-        <input type="password" class="textform" placeholder="password"><br>
+        <form action="register.php" method="post">
+            <h3>Create account</h3><br>
+            <h1>User name:</h1>
+                <input name="username" type="text" class="textform" placeholder="login" size="32" maxlength="32" required><br><br>
+            <h1>Login:</h1>
+                <input name="login" type="text" class="textform" placeholder="login" size="32" maxlength="32" required><br><br>
+            <h1>Password:</h1>
+                <input name="password" type="password" class="textform" placeholder="password" size="32" maxlength="32" required><br>
+                <input name="r_password" type="password" class="textform" placeholder="repeat password" size="32" maxlength="32" required><br><br>
+            <div class="SignInBtn"><input name="submit" type="submit" class="input" value="Sign in"></div>
+            <div class="exitDesc"><h3>Exit</h3></div>
+        </form>
     </div>
 </div>
-<div class="desc">
-</div>
+<div class="desc"></div>
+<div class="img-center"></div>
 <div id="wrap">
-
     <div id="header" class="middle">
-
+        <INPUT id="desc_open" type="button" class="btn-info" value="Sign in" onclick="btn1()">
         <div id="login">
             <script src="http://ulogin.ru/js/ulogin.js"></script>
             <div id="uLogin" data-ulogin="display=panel;fields=first_name,last_name;providers=facebook,vkontakte,google;hidden=twitter,odnoklassniki;redirect_uri=http%3A%2F%2Fwww.click.s-host.net/welcome"></div>
         </div>
-        <div class="logo"><a href="http://click.s-host.net"><img src="/img/logo.png"></a></div>
-        <h2>HTML, CSS, JS test area!!!</h2>
+            <div class="logo"><a href="http://click.s-host.net"><img src="/img/logo.png"></a></div>
+            <h2>Welcome to Click JS test!!!</h2>
+    </div>
         </div>
     <div class="tabs_box">
         <!--Начало навбара, все остальное внутри него-->
@@ -57,19 +62,18 @@
             <div class="tab" id="tab1">
             <div class="wrap1">
                 <div id="left_menu">
-                    <INPUT type="button" class="btn btn-info" value="Push it 1" onclick="pushit1()"><br>
-                    <INPUT type="button" class="btn btn-info" value="Push it 2" onclick="pushit2()"><br>
-                    <INPUT type="button" class="btn btn-info" value="Push it 3" onclick="pushit3()"><br>
-                    <INPUT type="button" class="btn btn-info" value="Push it 4" onclick="pushit4()"><br>
-                    <INPUT type="button" class="btn btn-info" value="Push it 5" onclick="pushit5()"><br>
-                    <INPUT type="button" class="btn btn-info" value="Push it 6" onclick="pushit6()"><br>
-                    <INPUT type="button" class="btn btn-info" value="Test button" onclick="pushit7()"><br>
-                    <INPUT type="button" class="btn btn-info" value="Empty" onclick="pushit8()">
+                    <INPUT type="button" class="btn-info" value="Push it 1" onclick="pushit1()"><br>
+                    <INPUT type="button" class="btn-info" value="Push it 2" onclick="pushit2()"><br>
+                    <INPUT type="button" class="btn-info" value="Push it 3" onclick="pushit3()"><br>
+                    <INPUT type="button" class="btn-info" value="Push it 4" onclick="pushit4()"><br>
+                    <INPUT type="button" class="btn-info" value="Push it 5" onclick="pushit5()"><br>
+                    <INPUT type="button" class="btn-info" value="Push it 6" onclick="pushit6()"><br>
+                    <INPUT type="button" class="btn-info" value="Test button" onclick="pushit7()"><br>
+                    <INPUT type="button" class="btn-info" value="Empty" onclick="pushit8()">
             </div>
                 <div id="right_menu">
                     <div id="btpushright">
-                        <INPUT id="desc_open" type="button" class="btn btn-info" value="Sign in" onclick="btn1()"><br>
-                        <INPUT type="button" class="btn btn-info" value="test8" onclick="pushit()">
+                        <INPUT type="button" class="btn-info" value="test8" onclick="pushit()">
                     </div>
                 </div>
                 <div id="content">

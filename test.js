@@ -187,6 +187,25 @@ $(document).ready(function(){
 //______________________________________________END_______________________________________________________________
 $(document).ready(function(){
     $("#desc_open").click(function() {
+        $("#header, .tabs_box, #footer, .img-center").css({
+            "-webkit-filter": "blur(12px)",
+            "-moz-filter": "blur(12px)",
+            "-ms-filter": "blur(12px)",
+            "-o-filter": "blur(12px)",
+            "filter": "blur(12px)"});
+        $("#glisse-wrapper").css({
+            "margin": "auto auto",
+            "top": "60px",
+            "left": "0px",
+            "width": "100%",
+            "height": "100%",
+            "background-size": "cover",
+            "-webkit-filter": "blur(12px)",
+            "-moz-filter": "blur(12px)",
+            "-ms-filter": "blur(12px)",
+            "-o-filter": "blur(12px)",
+            "filter": "blur(12px)"});
+        $(".img-center").slideDown(150);
         $(".desc").show();
         $(".blockForm").slideDown(200);
         return false;
@@ -195,7 +214,31 @@ $(document).ready(function(){
 
 $(document).ready(function() {
     $(".exitDesc, .desc").click(function() {
+        $("#header, .tabs_box, #footer, .img-center").css({
+            "-webkit-filter": "blur(0px)",
+            "-moz-filter": "blur(0px)",
+            "-ms-filter": "blur(0px)",
+            "-o-filter": "blur(0px)",
+            "filter": "blur(0px)"});
+        $("#glisse-wrapper").hide();
+        /*$(".img-center").hide();*/
         $(".desc").hide();
         $(".blockForm").hide();
-    })
+    });
+});
+
+$(document).keyup(function(esc) {
+    if (esc.which === 27) {
+        $("#header, .tabs_box, #footer, .img-center").css({
+            "-webkit-filter": "blur(0px)",
+            "-moz-filter": "blur(0px)",
+            "-ms-filter": "blur(0px)",
+            "-o-filter": "blur(0px)",
+            "filter": "blur(0px)"});
+        $("#glisse-wrapper").hide();
+        $(".img-center").hide();
+        $(".desc").hide();
+        $(".blockForm").hide();
+        $.fullscreen.exit();
+    }
 });

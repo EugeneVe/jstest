@@ -5,6 +5,7 @@ html{height:100%}
 
 /* Glisse: Overlay */
 #glisse-overlay {
+    z-index: 5;
     position:fixed;
     top:0;
     bottom:0;
@@ -17,6 +18,7 @@ html{height:100%}
 /* Glisse: Overlay content */    
 /* Glisse: Overlay content */
 #glisse-overlay-content {
+    z-index: 5;
     position: fixed;
     top: 10%;
     right: 10%;
@@ -45,10 +47,11 @@ html{height:100%}
     }
 
 /* Glisse: Close button */
-#glisse-close { cursor:pointer; }
+#glisse-close { z-index: 5; cursor:pointer; }
 
 /* Glisse: Spinner */
 #glisse-spinner {
+    z-index: 5;
     position:fixed;
     top: 50%;
     left: 50%;
@@ -66,6 +69,7 @@ html{height:100%}
     
     /* Prev/Next button */
     .glisse-next a, .glisse-prev a{
+        z-index: 5;
         -webkit-transition:all 100ms ease;
         -moz-transition:all 100ms ease;
         -o-transition:all 100ms ease;
