@@ -1,3 +1,16 @@
+<?php require 'connections/connections.php'; ?>
+<?php
+    if(isset($_POST['register'])) {
+        session_start();
+        $FName = $_POST['FirstName'];
+        $LName = $_POST['LastName'];
+        $Email = $_POST['Email'];
+        $PW = $_POST['Password'];
+
+        $sql = $con->query("INSERT INTO user (fname, lname, email, pass,) 
+                            VALUES ({'$FName', '$LName', '$Email', '$PW'})");
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,18 +38,20 @@
 <script async src="js/scrolltop.js"></script>
 <div class="blockForm">
     <div class="textfoms">
-        <form action="register.php" method="post">
-            <h3>Create account</h3><br>
-            <h1>User name:</h1>
-                <input name="username" type="text" class="textform" placeholder="login" size="32" maxlength="32" required><br><br>
-            <h1>Login:</h1>
-                <input name="login" type="text" class="textform" placeholder="login" size="32" maxlength="32" required><br><br>
-            <h1>Password:</h1>
-                <input name="password" type="password" class="textform" placeholder="password" size="32" maxlength="32" required><br>
-                <input name="r_password" type="password" class="textform" placeholder="repeat password" size="32" maxlength="32" required><br><br>
-            <div class="SignInBtn"><input name="submit" type="submit" class="input" value="Sign in"></div>
-            <div class="exitDesc"><h3>Exit</h3></div>
-        </form>
+    <form action="" method="post" name="registerForm" id="registerForm">
+        <h3>Create account</h3><br>
+        <input name="firstname" id="FirstName" type="text" class="textform" placeholder="First Name" size="32" maxlength="32" required><br>
+        <input name="lastname" id="LastName" type="text" class="textform" placeholder="Last Name" size="32" maxlength="32" required><br>
+        <input name="email" id="Email" type="email" class="textform" placeholder="Email" size="32" maxlength="32" required><br>
+        <input name="password" id="Password" type="password" class="textform" placeholder="password" size="32" maxlength="32" required>
+        <label><input type="checkbox" id="pscheckbox" name="pscheckbox" value="pscheckbox"><span></span></label></br>
+        <div class="reg">
+            <input name="register" type="submit" class="input" id="register" value="Register">
+        </div>
+        <div class="exitbtn">
+            <input name="exit" id="exit" type="submit" class="input" value="Exit">
+        </div>
+    </form>
     </div>
 </div>
 <div class="desc"></div>
@@ -71,10 +86,12 @@
                     <INPUT type="button" class="btn-info" value="Test button" onclick="pushit7()"><br>
                     <INPUT type="button" class="btn-info" value="Empty" onclick="pushit8()">
             </div>
+                <div class="showRm"><INPUT type="button" class="btn-info" value="showMeRm""></div>
                 <div id="right_menu">
                     <div id="btpushright">
                         <INPUT type="button" class="btn-info" value="test8" onclick="pushit()">
                     </div>
+                    <div class="roundBtnHide"><INPUT type="button" class="rbh" value="X"></div>
                 </div>
                 <div id="content">
                     <div class="textbarTop">
@@ -188,9 +205,9 @@
                     </div>
                     <div class="textbar2"><center>
                         <div id="panel1">
-                            <img class="pics" src="http://s.picsfab.com/static/contents/images/d/8/c/bbf2f7561c16bad293a3dc0933346.jpg" data-glisse-big="http://picsfab.com/download/image/195550/1920x1200_nebo-tuchi-goryi-les-reka-kamni.jpg" rel="group1"/>
-                            <img class="pics" src="http://s.picsfab.com/static/contents/images/7/3/1/ebdbd094951fea52e49c245e19953.jpg" data-glisse-big="http://picsfab.com/download/image/196144/1920x1200_photographer-bryunetka-poziruet-doroga-figurka.jpg" rel="group1"/>
-                            <img class="pics" src="http://s.picsfab.com/static/contents/images/e/c/3/374c1e703e1493695f1ddc214b119.jpg" data-glisse-big="http://picsfab.com/download/image/195434/1920x1200_goryi-doroga-krasnyij-superkar-skorost.jpg" rel="group1"/>
+                            <img class="pics" src="http://img3.goodfon.su/wallpaper/middle/9/49/frg-germaniya-gorod.jpg" data-glisse-big="http://img3.goodfon.su/original/2048x1367/9/49/frg-germaniya-gorod.jpg" rel="group1"/>
+                            <img class="pics" src="http://img3.goodfon.su/wallpaper/middle/5/3c/luba-menyaeva-colored-ass.jpg" data-glisse-big="http://img3.goodfon.su/original/2560x1843/5/3c/luba-menyaeva-colored-ass.jpg" rel="group1"/>
+                            <img class="pics" src="http://img1.goodfon.su/wallpaper/middle/a/b2/eyewear-virtual-reality.jpg" data-glisse-big="http://img1.goodfon.su/original/2048x1365/a/b2/eyewear-virtual-reality.jpg" rel="group1"/>
                         </div>
                         <!--<p class="slide">-->
                             <a href="#panel1" class="btn-slide1"><span>Open gallery ▼</span></a>

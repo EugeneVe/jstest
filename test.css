@@ -33,7 +33,7 @@
 .blockForm {
     padding-top: 20px;
     position: absolute;
-    margin: 200px auto;
+    margin: 150px auto;
     left: 0;
     right: 0;
     z-index: 110;
@@ -47,24 +47,71 @@
 }
 
 .textform {
+    padding: 0 5px 0 5px;
     width: 300px;
-    height: 20px;
+    height: 35px;
     margin-top: 5px;
+    font-size: 16px;
+    border: solid 1px;
+    border-radius: 5px;
+    border-color: #8f8f8f;
 }
 
 .textfoms {
-    margin-left: 50px;
+    margin-left: 40px;
 }
 
-.exitDesc {
+.exitbtn {
+    width: 10px;
     top: 250px;
     left: 320px;
     position: absolute;
     cursor: pointer;
 }
-.SignInBtn {
+
+.exitbtn:hover{
+    color: #3e51ff;
+}
+
+.reg {
+    width: auto;
     top: 250px;
-    left: 50px;
+    left: 40px;
     position: absolute;
     cursor: pointer;
+}
+
+
+.input {
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #5770ff;
+    font-size: 18px;
+    text-shadow: 1px 1px 2px dimgray;
+}
+.input:hover {
+    color: #3e51ff;
+}
+
+
+label {
+    width: 32px;
+    height: 26px;
+    display: block;
+    position: absolute;
+    left: 333px; top: 188px;
+}
+input[type="checkbox"] + span {
+    position: absolute;
+    left: -15px;
+    width: 100%; height: 100%;
+    background: url(img/pswdswitch.png) no-repeat;
+    cursor: pointer;
+}
+input[type="checkbox"]:checked + span  	{
+    background-position: 0 -26px;
+}
+#pscheckbox {
+    display: none;
 }

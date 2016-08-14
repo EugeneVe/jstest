@@ -13,9 +13,12 @@
     $connect = mysqli_connect($host,$user,$password);
     mysqli_select_db($bd_name,$connect);
 
-    if($connect == true) {
-        header("location: http://www.click.s-host.net/mysqlok.html");
+    $username=trim($_REQUEST['username']);
+    $login=trim($_REQUEST['login']);
+    $pswd=trim($_REQUEST['password']);
 
+if($connect == true) {
+        header("location: http://www.click.s-host.net/mysqlok.html");
     }
     else {
         header("location: http://www.click.s-host.net/error.html");

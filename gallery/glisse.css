@@ -47,7 +47,7 @@ html{height:100%}
     }
 
 /* Glisse: Close button */
-#glisse-close { z-index: 5; cursor:pointer; }
+#glisse-close {z-index: 5; cursor:pointer; }
 
 /* Glisse: Spinner */
 #glisse-spinner {
@@ -79,7 +79,7 @@ html{height:100%}
         -moz-user-select:none;
         user-select:none;
     }
-    #glisse-controls .ended a {opacity:.9;cursor: hand;} /* disabled effect */
+    #glisse-controls .ended a {z-index: 5; opacity:.9;cursor: hand;} /* disabled effect */
 
 /* Glisse: Keyframes */
 @-webkit-keyframes shake {

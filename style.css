@@ -60,16 +60,43 @@ html, body {
 }
 
 #right_menu {
+    position: relative;
+    display: none;
     height: 480px;
     background-color: #ffffff;
     border-radius: 3px;
     border: 1px solid #dadada;
-    /* old margin-left: 672px;    margin-top: 120px;    position: absolute;    width: 128px;    height: 400px;    text-align: center;*/
     float: right;
     width: 128px;
     margin-right: 10px;
     text-align: center;
-    /*margin-top: 5px;*/
+}
+
+.showRm {
+    z-index: 9999;
+    float: right;
+    margin-right: 28px;
+    text-align: center;
+}
+
+.roundBtnHide {
+    position: absolute;
+    bottom: 0;
+    margin: 0 0 2px 110px;
+}
+.rbh {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    background-color: #5085a5;
+    border-style: none;
+    cursor: pointer;
+    color: whitesmoke;
+}
+.rbh:hover{
+    background-color: #678aa5;
+    color: wheat;
 }
 
 #content {
@@ -238,20 +265,6 @@ h3 {
     background-color: #31b0d5;
     border-color: #269abc;
 }
-
-.input {
-    cursor: pointer;
-    background: none;
-    border: none;
-    color: #5770ff;
-    font-size: 18px;
-    text-shadow: 1px 1px 2px dimgray;
-}
-/*
-.input:active {
-    display: none;
-}
-*/
 
 
 /* ________________________________HERE IS PARTS OF BOOTSTRAP.CSS___________________________________________________*/
