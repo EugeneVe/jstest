@@ -220,11 +220,13 @@ $(document).ready(function() {
         /*$(".img-center").hide();*/
         $(".desc").hide();
         $(".blockForm").hide();
+        $('.textfoms').find('form')[0].reset(); /*clear form after close*/
     });
 });
 
 $(document).keyup(function(esc) {
     if (esc.which === 27) {
+        $('.textfoms').find('form')[0].reset();
         $("#header, .tabs_box, #footer, .img-center").css({
             "-webkit-filter": "blur(0px)",
             "-moz-filter": "blur(0px)",
@@ -236,6 +238,7 @@ $(document).keyup(function(esc) {
         $(".desc").hide();
         $(".blockForm").hide();
         $.fullscreen.exit();
+
     }
 });
 /*passwordCheck*/
@@ -260,3 +263,5 @@ $(document).ready(function(){
         $(".showRm").show();
     });
 });
+
+$("#myform")[0].reset();
