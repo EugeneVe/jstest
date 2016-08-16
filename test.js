@@ -247,7 +247,7 @@ $(document).ready(function () {
         $('#Password').attr('type', $(this).is (':checked') ? 'text' : 'password');
     });
 });
-
+/*passwordCheck*/
 $(document).ready(function(){
     "use strict";
     $(".showRm").click(function(){
@@ -256,12 +256,10 @@ $(document).ready(function(){
         });
     });
 });
-$(document).ready(function(){
-    "use strict";
+
     $(".roundBtnHide").click(function(){
         $("#right_menu").slideUp(200);
         $(".showRm").show();
-    });
 });
 
 $("#myform")[0].reset();

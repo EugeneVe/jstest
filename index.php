@@ -89,7 +89,17 @@
                 <div class="showRm"><INPUT type="button" class="btn-info" value="showMeRm""></div>
                 <div id="right_menu">
                     <div id="btpushright">
-                        <INPUT type="button" class="btn-info" value="test8" onclick="pushit()">
+                        <INPUT type="button" class="btn-info" value="test8" onclick="pushit()"><br><br>
+                        <div class="menuList">
+                            <ul>
+                                <li class="rmli">
+                                    <a href="http://www.pendrivelinux.com/multiboot-create-a-multiboot-usb-from-linux/">MultiSysManual</a>
+                                </li>
+                                <li class="rmli">
+                                    <a href="http://i2.wp.com/itc.ua/wp-content/uploads/2016/08/Mjc5MTA3NQ.jpeg">MultiSysDownload</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="roundBtnHide"><INPUT type="button" class="rbh" value="X"></div>
                 </div>
@@ -206,7 +216,7 @@
                     <div class="textbar2"><center>
                         <div id="panel1">
                             <img class="pics" src="http://img3.goodfon.su/wallpaper/middle/9/49/frg-germaniya-gorod.jpg" data-glisse-big="http://img3.goodfon.su/original/2048x1367/9/49/frg-germaniya-gorod.jpg" rel="group1"/>
-                            <img class="pics" src="http://img3.goodfon.su/wallpaper/middle/5/3c/luba-menyaeva-colored-ass.jpg" data-glisse-big="http://img3.goodfon.su/original/2560x1843/5/3c/luba-menyaeva-colored-ass.jpg" rel="group1"/>
+                            <img class="pics" src="https://img2.goodfon.ru/wallpaper/middle/8/45/noch-park-skamya.jpg" data-glisse-big="https://img2.goodfon.ru/original/1680x1050/8/45/noch-park-skamya.jpg" rel="group1"/>
                             <img class="pics" src="http://img1.goodfon.su/wallpaper/middle/a/b2/eyewear-virtual-reality.jpg" data-glisse-big="http://img1.goodfon.su/original/2048x1365/a/b2/eyewear-virtual-reality.jpg" rel="group1"/>
                         </div>
                         <!--<p class="slide">-->
