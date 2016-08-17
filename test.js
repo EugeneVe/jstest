@@ -242,11 +242,9 @@ $(document).keyup(function(esc) {
     }
 });
 /*passwordCheck*/
-$(document).ready(function () {
-    $('#pscheckbox').click(function () {
-        $('#Password').attr('type', $(this).is (':checked') ? 'text' : 'password');
-    });
-});
+        $('#pscheckbox').click(function () {
+            $('#Password').attr('type', $(this).is(':checked') ? 'text' : 'password');
+        });
 /*passwordCheck*/
 $(document).ready(function(){
     "use strict";
