@@ -16,7 +16,7 @@
             $element = $(element),
             defaults = {
                 dataName: 'data-glisse-big',
-                speed: 500,
+                speed: 300,
                 changeSpeed: 500,
                 effect: 'bounce',
                 mobile: false,

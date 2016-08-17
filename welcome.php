@@ -3,25 +3,25 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>JavaScript test site!!!</title>
-    <link href="slidepannel.css" rel="stylesheet" type="text/css" />
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link href="gallery/glisse.css" rel="stylesheet" type="text/css" />
-    <link href="gallery_btn.css" rel="stylesheet" type="text/css" />
-    <!--script with path of js-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script defer src="gallery/glisse.js"></script>
-    <script async src="js/tabs.js"></script>
-    <script async src="test.js" ></script>
-    <script async src="js/disqus.js"></script>
-    <script async id="dsq-count-scr" src="//clickukr.disqus.com/count.js"></script>
-    <script async src="js/scrolltop.js"></script>
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="slidepannel.css" />
+    <link rel="stylesheet" type="text/css" href="gallery/glisse.css" />
+    <link rel="stylesheet" type="text/css" href="gallery_btn.css"/>
 </head>
 <body>
+<!--script with path of js-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script defer src="gallery/glisse.js"></script>
+<script async src="js/tabs.js"></script>
+<script async src="test.js"></script>
+<script async src="js/disqus.js"></script>
+<script async src="//clickukr.disqus.com/count.js" id="dsq-count-scr"></script>
+<script async src="js/scrolltop.js"></script>
 <div id="wrap">
     <div id="header" class="middle">
-        <div class="exit">
-            <INPUT type="button" class="btnex" value="Exit" onclick="pushit9()">
-        </div>
+        <div class="exit"><INPUT type="button" class="btnex" value="X" onclick="pushit9()"></div>
         <div class="logo"><a href="http://click.s-host.net/welcome.php"><img src="/img/logo.png"></a></div>
         <h2>Welcome to Click JS test</h2>
     </div>
@@ -29,8 +29,8 @@
         <!--Начало навбара, все остальное внутри него-->
         <ul class="tabs_menu">
             <li><a href="#tab1" class="active">Main</a></li>
-            <li><a href="#tab2">Comments "DISQUS"</a></li>
-            <li><a href="#tab3">Help</a></li>
+            <li><a href="#tab2">Comments</a></li>
+            <li><a href="#tab3">Parser</a></li>
             <li><a href="#tab4">hide page</a></li>
         </ul>
             <div class="tab" id="tab1">
@@ -62,11 +62,11 @@
                     </div>
                    <p id="test"></p>
                     <div class="textbar">
-                        <ul>
+                        <ul class="content">
                             Это свойство может принимать 3 значения:
-                            <li>normal - уsстанавливается и используется по умолчанию. Под умолчанием подразумевается, что перенос строк не будет осуществляться. Перенос будет только в случае использования html тэга &lt;br&gt;.</li>
-                            <li>break-all - делает перенос всех строк, имеющих в качестве окончания символ пробела, а также в местах где есть HTML тэг &lt;br&gt;.Обрезка строк происходит в соответствии с рамками блока.</li>
-                            <li>keep-all - действует как normal. Это свойство используется для азиатских стран с учетом специфики их языка.</li>
+                            <li class="content">normal - уsстанавливается и используется по умолчанию. Под умолчанием подразумевается, что перенос строк не будет осуществляться. Перенос будет только в случае использования html тэга &lt;br&gt;.</li>
+                            <li class="content">break-all - делает перенос всех строк, имеющих в качестве окончания символ пробела, а также в местах где есть HTML тэг &lt;br&gt;.Обрезка строк происходит в соответствии с рамками блока.</li>
+                            <li class="content">keep-all - действует как normal. Это свойство используется для азиатских стран с учетом специфики их языка.</li>
                         </ul>
                     </div>
                     <div class="textbar2"><center>
@@ -91,21 +91,17 @@
         </div>
         <div class="tab" id="tab3">
             <div class="wrap3">
-                <?php
-                include_once ('lib/curl_query.php');
-                $html = curl_get('http://www.goodfon.su');
-                echo $html;
-                ?>
+
             </div>
         </div>
         <div class="tab" id="tab4">
             <div class="wrap4">
                 <center>
                     <div id="panel2">
-                        <img class="pics" src="http://s.picsfab.com/static/contents/images/7/4/5/f8501e50141b48c57e32b7157edc8.jpg" data-glisse-big="http://picsfab.com/download/image/200429/1920x1080_photographer-devushka-model-foto-figura-telo.jpg" rel="group2"/>
-                        <img class="pics" src="http://s.picsfab.com/static/contents/images/d/6/9/dc0cc745d53b3a0a5ce130d23b768.jpg" data-glisse-big="http://picsfab.com/download/image/107834/1920x1080_lacey-banghard-popa-myach-spina-basketbol.jpg" rel="group2"/>
-                        <img class="pics" src="http://s.picsfab.com/static/contents/images/1/8/f/faffcc68ce26914f02e96764563ca.jpg" data-glisse-big="http://picsfab.com/download/image/200198/1920x1080_photographer-devushka-shatenka.jpg" rel="group2"/>
-                        <img class="pics" src="http://s.picsfab.com/static/contents/images/1/e/e/aa0d2d1270e72efa9ef075185e5f8.jpg" data-glisse-big="http://picsfab.com/download/image/200196/1920x1080_photographer-devushka-bryunetka.jpg" rel="group2"/>
+                        <img class="pics" src="" data-glisse-big="" rel="group2"/>
+                        <img class="pics" src="" data-glisse-big="" rel="group2"/>
+                        <img class="pics" src="" data-glisse-big="" rel="group2"/>
+                        <img class="pics" src="" data-glisse-big="" rel="group2"/>
                     </div>
                     <!--<p class="slide">-->
                     <a href="#panel2" class="btn-slide2"><span>Open gallery ▼</span></a>

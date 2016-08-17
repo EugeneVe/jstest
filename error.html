@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>JavaScript test site has ERROR MYSQL connection</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <center><br><br><br><h3>
+    JavaScript test site has ERROR MYSQL connection</h3>
+    <form action="" method="get" name="timer">
+        <input class="timer" name="clock" type="text" size=1>секунд
+    </form></center>
+    <script language="JavaScript">
+        var seconds=6;
+        remain();
+        function remain(){
+            seconds--;
+            document.timer.clock.value=seconds;
+            if(seconds>0)
+            {window.setTimeout('remain()',1000)}
+            else
+            {
+                location.replace("http://www.click.s-host.net/");}
+        }
+    </script>
+</body>
+</html>
